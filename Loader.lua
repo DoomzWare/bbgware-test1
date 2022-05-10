@@ -1,7 +1,7 @@
 repeat task.wait() until game.GameId ~= 0
 if Parvus and Parvus.Loaded then
     Parvus.Utilities.UI:Notification({
-        Title = "Parvus Hub",
+        Title = "bbgware",
         Description = "Script already executed!",
         Duration = 5
     })
@@ -46,17 +46,17 @@ Parvus.Utilities.NewThreadLoop = function(Wait,Function)
 end
 
 Parvus.Games = {
-    ["1054526971"] = {
-        Name = "Blackhawk Rescue Mission 5",
-        Script = Parvus.Debug and readfile("Parvus/Games/BRM5.lua") or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/BRM5.lua")
-    },
-    ["580765040"] = {
-        Name = "RAGDOLL UNIVERSE",
-        Script = Parvus.Debug and readfile("Parvus/Games/RU.lua") or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/RU.lua")
-    },
+  --  ["1054526971"] = {
+    --    Name = "Blackhawk Rescue Mission 5",
+    --    Script = Parvus.Debug and readfile("Parvus/Games/BRM5.lua") or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/BRM5.lua")
+   -- },
+   -- ["580765040"] = {
+  --      Name = "RAGDOLL UNIVERSE",
+   --     Script = Parvus.Debug and readfile("Parvus/Games/RU.lua") or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/RU.lua")
+   -- },
     ["1168263273"] = {
         Name = "Bad Business",
-        Script = Parvus.Debug and readfile("Parvus/Games/BB.lua") or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Games/BB.lua")
+        Script = Parvus.Debug and readfile("Parvus/Games/BB.lua") or game:HttpGetAsync("https://raw.githubusercontent.com/DoomzWare/bbgware-test1/main/Games/BB.lua")
     },
     --[[
     ["807930589"] = {
@@ -91,7 +91,7 @@ if SupportedGame then
     Parvus.Current = SupportedGame.Name
     loadstring(SupportedGame.Script)()
     Parvus.Utilities.UI:Notification({
-        Title = "Parvus Hub",
+        Title = "BbgWare",
         Description = Parvus.Current .. " loaded!",
         Duration = 5
     })
@@ -100,7 +100,7 @@ else
     Parvus.Current = "Universal"
     loadstring(Parvus.Debug and readfile("Parvus/Universal.lua") or game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Universal.lua"))()
     Parvus.Utilities.UI:Notification({
-        Title = "Parvus Hub",
+        Title = "Bbgware",
         Description = Parvus.Current .. " loaded!",
         Duration = 5
     })
