@@ -684,7 +684,7 @@ Color = Parvus.Utilities.Config:TableToColor(Parvus.Config.UI.Color),Position = 
                 game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, Servers[math.random(1, #Servers)])
             else
                 Parvus.Utilities.UI:Notification({
-                    Title = "Parvus Hub",
+                    Title = "Bbg Ware",
                     Description = "Couldn't find a server",
                     Duration = 5
                 })
@@ -1144,7 +1144,7 @@ RunService.Heartbeat:Connect(function()
         Parvus.Utilities.UI:Watermark({
             Enabled = true,
             Title = string.format(
-                "Parvus Hub — %s\nTime: %s - %s\nFPS: %i/s\nPing: %i ms",
+                "BbgWare  — %s\nTime: %s - %s\nFPS: %i/s\nPing: %i ms",
                 Parvus.Current,os.date("%X"),os.date("%x"),GetFPS(),math.round(Stats.PerformanceStats.Ping:GetValue())
             )
         })
