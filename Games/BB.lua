@@ -216,7 +216,7 @@ Parvus.Utilities.Drawing:Cursor(Parvus.Config.UI.Cursor)
 Parvus.Utilities.Drawing:FoVCircle(Parvus.Config.AimAssist.Aimbot)
 Parvus.Utilities.Drawing:FoVCircle(Parvus.Config.AimAssist.Trigger)
 Parvus.Utilities.Drawing:FoVCircle(Parvus.Config.AimAssist.SilentAim)
-local Window = Parvus.Utilities.UI:Window({Name = "Parvus Hub — " .. Parvus.Current,Enabled = Parvus.Config.UI.Enabled,
+local Window = Parvus.Utilities.UI:Window({Name = "bbgware — " .. Parvus.Current,Enabled = Parvus.Config.UI.Enabled,
 Color = Parvus.Utilities.Config:TableToColor(Parvus.Config.UI.Color),Position = UDim2.new(0.2,-248,0.5,-248)}) do
     local AimAssistTab = Window:Tab({Name = "Combat"}) do
         local AimbotSection = AimAssistTab:Section({Name = "Aimbot",Side = "Left"}) do
